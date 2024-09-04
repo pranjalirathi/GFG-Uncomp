@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-box">
+            <div class="left-container">
+                <label>
+                    Choose your gender:
+                    <select>
+                        <option value="" disabled selected>Select gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="prefer-not-say">Would rather not say</option>
+                    </select>
+                </label>
+                <label>
+                    Age:  
+                    <input type="number" placeholder="Enter your age">
+                </label>
+                <label>
+                    Course:
+                    <input type="text" placeholder="Enter the enrolled course">
+                </label>
+                <label>
+                    Current Year:
+                    <input type="text" placeholder="Enter your current year">
+                </label>
+            </div>
+
+            <div class="right-container">
+                <label>
+                    CGPA:
+                    <input type="text" placeholder="Enter your cgpa">
+                </label>
+                <label>
+                    Marital Status:
+                    <select>
+                        <option value="" disabled selected>Select gender</option>
+                        <option value="single">Single</option>
+                        <option value="married">Married</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label>
+                <label>
+                    Do you feel like depression?
+                    <input type="checkbox">
+                </label>
+                <label>
+                    Do you feel anxiety?
+                    <input type="checkbox">
+                </label>
+                <label>
+                    Do you get panic attacks?
+                    <input type="checkbox">
+                </label>
+            </div>
+        </div>
+        
+        <div class="buttons-container">
+            <button type="submit" class="submit-button">Submit</button>
+            <button class="go-back-button" onclick="goBack()">Go Back</button>
+        </div>
+
+        <script>
+            function goBack() {
+                window.location.href = "index.html";
+            }
+        </script>
+    </div>
+</body>
+</html>
